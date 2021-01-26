@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80vw;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* MENU */
+.menu {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  padding-left: 8.7%;
+  width: 100%;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding-right: 1.7vw;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.menu ul li a:hover {
+  background-color: #111111;
+  color: #fff;
+  padding: 4px;
+  border-radius: 10%;
+  transition: 500ms;
+}
+
+.menu ul li a:not(:hover) {
+  background-color: #fff;
+  color: #111111;
+  padding: 4px;
+  border-radius: none;
+  transition: 500ms;
+}
+
+/* BANNER */
+.banner {
+  background: #fbdfdb;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 6%;
+}
+
+.text {
+  width: 32%;
+}
+
+.text h1 {
+  font-size: 32px;
+  color: #111111;
+}
+
+.text p {
+  margin-top: 0.9vh;
+  opacity: 0.7;
+  font-size: 18px;
+  color: #000000;
+  line-height: 28px;
+}
+
+/* GALLERY */
+.gallery {
+  margin-top: 15vh;
+}
+
+.gallery h3 {
+  font-size: 24px;
+  color: #111111;
+  padding-bottom: 5vh;
+}
+
+ul.recipes li {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+ul.recipes li:nth-child(3n + 1) {
+  margin-right: 4.6%;
+}
+
+ul.recipes li:nth-child(3n) {
+  margin-left: 4.6%;
+}
+
+ul.recipes li img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 5vh;
+}
+
+p.bold {
+  font-size: 18px;
+  color: #111111;
+}
+
+p.author {
+  font-size: 14px;
+  color: #777777;
+}
+
+footer {
+  background: #eeeeee;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  padding: 2.1%;
+}
+
+footer p {
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+/* ARTICLES */
+#last-article {
+  padding-bottom: 5%;
+}
+
+/* RECIPES */
+/* ---- MODAL ---- */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  margin: 21% auto;
+}
+
+.modal-content {
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-close {
+  color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  background-color: white;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% 0 50%;
+  /* box-shadow: -5px 8px 5px #111; */
+  border: 4px solid red;
+}
